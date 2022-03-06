@@ -1,0 +1,25 @@
+input_data_path: "data/heart.csv"
+output_model_path: "models/model.pkl"
+metric_path: "models/metrics.json"
+splitting_params:
+  val_size: 0.1
+  random_state: 3
+train_params:
+  model_type: "RandomForestClassifier"
+feature_params:
+  numerical_features:
+    - "age"
+    - "sex"
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - "ca"
+    - "thal"
+  target_col: "target"
+
